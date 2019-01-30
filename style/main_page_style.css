@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    flex-direction: column;   
+    display: block;
+    height: 140px;
+    width: 100%;
+}
+#logo_frontit {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 350px;
+    height: 130px;
+}
+
+nav ul{
+    position: absolute;
+    right: 10%;
+    list-style-type: none;
+}
+nav li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px 20px 5px 20px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    transform: translateY(-10px);
+}
+.main_nav {
+    animation: main_nav_animation_out 0.4s;
+    animation-fill-mode: both;
+}
+.main_nav:hover {
+    cursor: pointer;
+    animation: main_nav_animation_in 0.4s;
+    animation-fill-mode: both;
+}
+
+.button_zaloguj {
+    display: block;
+    padding: 10px;
+    transform: translateY(-10px);
+    background-color: rgb(212, 206, 206);
+    border-radius: 15px;
+    color: white;
+}
+.button_zaloguj:hover {
+    cursor: pointer;
+}
+.middle_screen {
+    width: 100%;
+    height: 300px;
+    background-color: #9E9898;
+}
+.middle_screen_bottom {
+    width: 100%;
+    height: 80px;
+    background-color: #8B8787;
+}
+#picture_monitor {
+    width: 330px;
+    height: 260px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+   /* border: 1px solid red; */
+}
+#middle_screen_text {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    left: 10%;
+    top:  -25%;
+}
+#middle_screen_text ul {
+    position: inherit;
+    left: 20%;
+}
+.main_courses {
+    display: flex;
+    height: 370px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_courses > div {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 340px;
+    height: 310px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+.main_courses_style img {
+    width: 30px;
+    height: 30px;
+}
+.main_courses_html {
+    order: 1;
+    border: 2px solid #41BB45;
+   
+}
+.main_courses_css {
+    order: 2;
+    border: 2px solid #11B3F0;
+    
+}
+.main_courses_js {
+    order: 3;
+    border: 2px solid #F37321;
+}
+/* PRZYCISK NA GŁÓWNEJ STRONIE - PRZEJŚCIE DO KURSU*/
+.main_courses_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+	background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+}
+.main_courses_button:hover {
+    
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+    background-color:#dfdfdf;
+    
+}
+.main_courses_button:active {
+	position:relative;
+	top:1px;
+}
+/* ---------------------------------------------- */
+hr {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+} 
+/* STRONA GŁÓWNA - CZYM JEST FRONTIT */
+#main_info_frontit {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#main_info_frontit p:nth-child(1) {
+    font-style: italic;
+    font-size: 30px;
+}
+#main_info_frontit span {
+    font-weight: bold;
+    font-size: 40px;
+}
+#main_info_text {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+/* ---------------------------------------------- */
+/* STRONA GŁÓWNA - KONTAKT */
+#contact {
+    width: 100%;
+    height: 220px;
+    background-color: #F4F2F2;
+}
+#contact p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+#contact_info {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#contact_info ul{
+    list-style-type: none;
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+#contact_info ul li {
+    font-size: 16px;
+}
+#contact_info img {
+    width: 250px;
+    height: 100px;
+    margin-left: 30px;
+}
+#contact_adnotation p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: -10px;
+}
+
+/* ---------------------------------------------- */
+
+/* ANIMACJE */
+
+@keyframes main_nav_animation_in {
+    from {
+        background-color: white;
+    }
+    to {
+        display: block; 
+        background-color:lightgray;
+        border-radius: 15px;
+        text-shadow: 1px 1px white;
+    }
+}
+@keyframes main_nav_animation_out {
+    from {
+        display: block; 
+        background-color:lightgray;
+        border-radius: 15px;
+        text-shadow: 1px 1px white;
+    }
+    to {
+        background-color: white;
+    }
+}
+
+/*---------------------------*/
+/* MEDIA QUERIES*/
+@media (max-width: 1366px) {
+
+    #middle_screen_text {
+        font-size: 22px;
+        position: relative;
+        left: 10%;
+        top:  -35%;
+    }
+}
+@media (min-width: 1850px) {
+
+    #middle_screen_text {
+        font-size: 26px;
+        position: relative;
+        left: 20%;
+        top:  -25%;
+    }
+}
+
+/*---------------------------*/

@@ -1,0 +1,82 @@
+body {
+    background: #ffffff;
+}
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 80px;
+    height: 80px;
+}
+.login-left {
+    margin-top: 100px !important;
+    border: none;
+    background: rgb(209, 209, 209);
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    padding: 50px;
+    margin: 10px;
+}
+.login-left h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+.login-left p {
+    text-align: center;
+    padding: 20px 20px 0;
+}
+.login-left .btn-primary {
+    border-radius: 1.5em;
+    border: none;
+    width: 120px;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+}
+.login-left .btn-primary:hover {
+    background: #41BB45;
+}
+.register-right {
+    margin-top: 100px !important;
+    border: none;
+    background: rgb(209, 209, 209);
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    padding: 50px;
+    margin: 10px;
+}
+.register-right h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+.register-right p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+.register-form {
+    padding: 30px;
+}
+.register-right .btn-primary {
+    float: right;
+    border-radius: 1.5em;
+    border: none;
+    width: 150px;
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    margin-top: 20px;
+    padding: 10px;
+}
+.register-right .btn-primary:hover {
+    background: #41BB45;
+}
+.error {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
